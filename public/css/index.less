@@ -1,0 +1,305 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  font-family: "微软雅黑";
+}
+//nav
+.nav_nav{
+  position: fixed;
+  width: 640/64rem;
+  top:0;
+  right:20/64rem;
+  span{
+    display:inline-block ;
+    width: 40/64rem;
+    height: 40/64rem;
+    border:solid #0b4004 1/64rem;
+    text-align: center ;
+    line-height: 40/64rem;
+    font-size: 35/64rem;
+    color: #0b4f04;
+    float:right;
+    margin: 30/64rem;
+    cursor: pointer;
+    //background: -webkit-linear-gradient(left top, #0b3f04, #0b4f04, #0b8a04); /* Safari 5.1 - 6.0 */
+    //background: -o-linear-gradient(bottom right, #0b3f04, #0b4f04,#0b3f04); /* Opera 11.1 - 12.0 */
+    //background: -moz-linear-gradient(bottom right, #0b3f04, #0b4f04,#0b3f04); /* Firefox 3.6 - 15 */
+    //background: linear-gradient(to bottom right, #0b3f04, #0b4f04,#0b3f04); /* 标准的语法 */
+    //animation: but 2s infinite;
+
+  }
+  @keyframes but {
+       10%{
+         background: -webkit-linear-gradient(left top, #0b8a04, #0b4f04,#0b3f04); /* Safari 5.1 - 6.0 */
+         background: -o-linear-gradient(bottom right, #0b3f04, #0b8a04,#0b3f04); /* Opera 11.1 - 12.0 */
+         background: -moz-linear-gradient(bottom right, #0b3f04, #0b8704,#0b3f04); /* Firefox 3.6 - 15 */
+         background: linear-gradient(to bottom right, #0b3f04, #0b8704,#0b3f04);
+       }30%{
+         background: -webkit-linear-gradient(left top, #0b4f04, #0b8a04, #0b4f04); /* Safari 5.1 - 6.0 */
+         background: -o-linear-gradient(bottom right, #0b8a04, #0b6704, #0b8a04); /* Opera 11.1 - 12.0 */
+         background: -moz-linear-gradient(bottom right,#0b8a04, #0b6704, #0b8a04); /* Firefox 3.6 - 15 */
+         background: linear-gradient(to bottom right, #0b8a04, #0b6704, #0b8a04);
+       }50%{
+        background: -webkit-linear-gradient(left top, #0b4f04, #0b4f04, #0b8a04);
+       }
+  }
+  .nav_a{
+    position: relative ;
+    //right:-500/64rem;
+    line-height: 50/64rem;
+    float:right;
+    margin-top: 15/64rem;
+    text-align: center ;
+    width: 300/64rem;
+    display: none;
+  }
+
+  a{
+    display: inline-block ;
+    font-size: 30/64rem;
+    width: 60/64rem;
+    color:#0b4004;
+    line-height: 50/64rem;
+    //border:solid #0b4004 1/64rem;
+  }
+}
+//音乐
+.audio{
+  display: inline-block ;
+  width: 100/64rem;
+  height: 100/64rem;
+  position: absolute ;
+  right:50/64rem;
+  bottom:50/64rem;
+}
+.icon-yinlemusic215{
+   font-size:50/64rem;
+   color:#ffffff;
+}
+.nav{
+  position: fixed ;
+  bottom:0;
+  height: 100/64rem;
+  width: 100%;
+  background-color: rgb(11, 63, 4);
+  li{
+    float:left;
+    width: 25%;
+  }
+  li a{
+    width: 100%;
+    line-height: 100/64rem;
+    text-align: center ;
+    display: block ;
+    font-size: 45/64rem;
+    color:#ffffff;
+
+  }
+  .icon-xiangmujingyan{
+    font-size: 35/64rem;
+  }
+  a:hover{
+    color: #ffbc00;
+  }
+
+}
+.xing{
+  width: 100%;
+  height: 1136/64rem;
+  background:url(../img/02.jpg) no-repeat center;
+  background-size: 940/64rem 1210/64rem;
+  text-align: center;
+    h2{
+      font-size: 62/64rem;
+      font-family: 'OMEGA Boldo Rocko';
+      color: #0b4004;
+      padding: 186/64rem 0 50/64rem 0;
+    }
+    .resume{
+      width: 520/64rem;
+      height: 409/64rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      margin: 20/64rem auto;
+      padding:38/64rem 20/64rem;
+      //头像
+         .avatar{
+           width: 184/64rem;
+           height: 416/64rem;
+           border-right:1/64rem solid rgba(0, 0, 0, 0.5);
+           text-align: center;
+           float:left;
+           position: relative ;
+               span{
+                 display: block ;
+                 width: 140/64rem;
+                 height: 140/64rem;
+                 border-radius: 50%;
+                 background: url(../img/tou.png)center -20/64rem no-repeat;
+                 background-size: 153/64rem 220/64rem;
+                 position: absolute ;
+                 left:50%;
+                 top:105/64rem;
+                 transform: translateX(-50%);
+               }
+               p{
+                 position: absolute ;
+                 top:260/64rem;
+                 left:50%;
+                 font-size: 25/64rem;
+                 transform: translateX(-50%);
+                 //line-height: 50/64rem;
+               }
+         }
+      .xingxi{
+         float:left;
+         text-align: left;
+         padding: 50/64rem 25/64rem;
+         p{
+           font-size: 20/64rem;
+           line-height: 45/64rem;
+         }
+        p:hover{
+          color:#000000;
+        }
+      }
+    }
+}
+//项目
+.xiangmu{
+   width: 100%;
+   height: 1136/64rem;
+   //background-color: #ffffff;
+   text-align: left ;
+   //background: #ffffff url(../img/bg_2.png)0 400/64rem no-repeat;
+   //background-size:640/64rem 844/64rem ;
+  background:#ffffff url(../img/99.png)-120/64rem 390/64rem no-repeat ;
+    background-size:872/64rem 904/64rem;
+
+       z-index: -222;
+  //.bg_banner{
+  //  width: 100%;
+  //  height: 1136/64rem;
+  //  background: url(../img/99.png)-120/64rem 0 no-repeat ;
+  //  background-size:872/64rem 904/64rem;
+  //  z-index: 9999;
+  //}
+   span{
+     display: block ;
+     font-size: 52/64rem;
+     width: 500/64rem;
+     height: 100/64rem;
+     padding:150/64rem 70/64rem;
+     line-height: 50/64rem;
+     font-family: 'BethHand';
+     color: #000000;
+     z-index: -9999;
+     text-shadow:0 0 6/64rem #979797;
+     //background-color: #ffbc00;
+   }
+    .banner{
+      width: 540/64rem;
+      height: 690/64rem;
+      //background-color: #f8ffff;
+      text-align: center ;
+      position:  relative;
+      top:-100/64rem;
+      overflow: hidden ;
+      margin: 0 auto;
+      z-index: 1;
+      background: #f8ffff url(../img/99.png)-167/64rem 90/64rem no-repeat ;
+      background-size:872/64rem 904/64rem;
+      transform: translateX(-50%);
+      margin-left: 50%;
+      box-shadow: -10/64rem  -10/64rem 15/64rem rgba(0, 0, 0, 0.2);
+      .list{
+        width: 540*4/64rem;
+        li{
+          text-align: left;
+          float: left;
+          width: 440/64rem;
+          height: 680/64rem;
+          color: #000000;
+          font-size: 23/64rem;
+          line-height: 50/64rem;
+          padding:50/64rem 50/64rem;
+          h2{
+            line-height: 40/64rem;
+            text-align: center ;
+            margin: 10/64rem 0;
+            background-color: #0ba304;
+            border:solid #979797 1/64rem;
+            color: #ffffff;
+          }
+          h2:nth-child(5){
+            text-align: right ;
+            width: 265/64rem;
+            padding-right:20/64rem;
+            display: block ;
+            background-color:  #0ba304;
+          }
+          p:nth-child(8){
+            padding-left: 50/64rem;
+          }
+          a:nth-child(9){
+            padding-left: 50/64rem;
+          }
+          h2:nth-child(7){
+            text-align: right ;
+            width: 225/64rem;
+            padding-right:20/64rem;
+            margin-left: 40/64rem;
+            background-color:  #0ba304;
+          }
+        }
+      }
+
+      .btn{
+        position: absolute;
+        bottom: 20/64rem;
+        left: 50%;
+        margin-left: -100px;
+      }
+
+      .btn li{
+        width: 30/64rem;
+        line-height: 30/64rem;
+        text-align: center;
+        color: #fff;
+        background: #f8ffff;
+        border-radius: 50%;
+        float: left;
+        margin: 0 5/64rem;
+        font-size: 15/64rem;
+      }
+
+      .btn .on{
+        background: #ffffff;
+      }
+
+      .banner>a{
+        text-decoration: none;
+        position: absolute;
+        width: 30/64rem;
+        line-height: 60/64rem;
+        text-align: center;
+        background: rgba(0,0,0,0.3);
+        top: 50%;
+        margin-top: -30/64rem;
+        font-size: 18/64rem;
+        color: #fff;
+      }
+
+      .banner>a:hover{
+        background: rgba(0,0,0,0.5);
+      }
+      /*nth-of-type 限制类型   找里面a子元素  在这些a的子元素里面再选择第一个   nth-child 找所有儿子里面第几个*/
+      .banner>a:nth-of-type(1){
+        left: 0;
+      }
+      .banner>a:last-child{
+        right: 0;
+      }
+    }
+
+  }
