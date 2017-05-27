@@ -1,78 +1,57 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   font-family: "微软雅黑";
+}
+@font-face {
+  font-family: font omega BEHR;
+  src: url(../font/msyh.ttf), url(../font/msyh.ttf), url(../font/msyhl.ttc), url(../font/OMGBLDRK_0.TTF), url(../font/BEHR___.TTF);
+  
+  /* font-properties */
 }
 .nav_nav {
   position: fixed;
   width: 10rem;
   top: 0;
-  right: 0.3125rem;
+  left: 0.15625rem;
 }
 .nav_nav span {
   display: inline-block;
   width: 0.625rem;
   height: 0.625rem;
-  border: solid #0b4004 0.015625rem;
   text-align: center ;
   line-height: 0.625rem;
-  font-size: 0.546875rem;
+  font-size: 0.703125rem;
   color: #0b4f04;
-  float: right;
+  float: left;
   margin: 0.46875rem;
   cursor: pointer;
 }
-@keyframes but {
-  10% {
-    background: -webkit-linear-gradient(left top, #0b8a04, #0b4f04, #0b3f04);
-    /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(bottom right, #0b3f04, #0b8a04, #0b3f04);
-    /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(bottom right, #0b3f04, #0b8704, #0b3f04);
-    /* Firefox 3.6 - 15 */
-    background: linear-gradient(to bottom right, #0b3f04, #0b8704, #0b3f04);
-  }
-  30% {
-    background: -webkit-linear-gradient(left top, #0b4f04, #0b8a04, #0b4f04);
-    /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(bottom right, #0b8a04, #0b6704, #0b8a04);
-    /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(bottom right, #0b8a04, #0b6704, #0b8a04);
-    /* Firefox 3.6 - 15 */
-    background: linear-gradient(to bottom right, #0b8a04, #0b6704, #0b8a04);
-  }
-  50% {
-    background: -webkit-linear-gradient(left top, #0b4f04, #0b4f04, #0b8a04);
-  }
-}
-.nav_nav .nav_a {
+.nav_a {
   position: relative ;
   line-height: 0.78125rem;
-  float: right;
-  margin-top: 0.234375rem;
+  float: left;
+  margin-top: 0.15625rem;
   text-align: center ;
   width: 4.6875rem;
   display: none;
 }
-.nav_nav a {
+.nav_a a {
   display: inline-block;
-  font-size: 0.46875rem;
-  width: 0.9375rem;
+  font-size: 0.390625rem;
+  width: 0.78125rem;
   color: #0b4004;
   line-height: 0.78125rem;
 }
 .audio {
-  display: inline-block;
-  width: 1.5625rem;
-  height: 1.5625rem;
-  position: absolute ;
-  right: 0.78125rem;
-  bottom: 0.78125rem;
-}
-.icon-yinlemusic215 {
-  font-size: 0.78125rem;
-  color: #ffffff;
+  position: relative ;
+  right: 0.46875rem;
+  bottom: 0.9375rem;
+  width: 6.25rem;
+  height: 1.25rem;
+  background-color: #0b8a04 ;
+  z-index: 9999;
 }
 .nav {
   position: fixed ;
@@ -162,9 +141,10 @@ body {
   width: 100%;
   height: 17.75rem;
   text-align: left ;
-  background: #ffffff url(../img/99.png) -1.875rem 6.09375rem no-repeat;
-  background-size: 13.625rem 14.125rem;
+  background: rgba(255, 255, 255, 0.2) url(../img/bg_2.png) 0 5.78125rem no-repeat;
+  background-size: 10rem 14.75rem;
   z-index: -222;
+  /*nth-of-type 限制类型   找里面a子元素  在这些a的子元素里面再选择第一个   nth-child 找所有儿子里面第几个*/
 }
 .xiangmu span {
   display: block ;
@@ -173,26 +153,23 @@ body {
   height: 1.5625rem;
   padding: 2.34375rem 1.09375rem;
   line-height: 0.78125rem;
-  font-family: 'BethHand';
+  font-family: "BethHand";
   color: #000000;
   z-index: -9999;
   text-shadow: 0 0 0.09375rem #979797;
 }
 .xiangmu .banner {
-  width: 8.4375rem;
-  height: 10.78125rem;
+  width: 8.90625rem;
+  height: 11.25rem;
   text-align: center ;
   position: relative;
   top: -1.5625rem;
   overflow: hidden ;
   margin: 0 auto;
   z-index: 1;
-  background: #f8ffff url(../img/99.png) -2.609375rem 1.40625rem no-repeat;
-  background-size: 13.625rem 14.125rem;
+  background: #ffffff;
   transform: translateX(-50%);
   margin-left: 50%;
-  box-shadow: -0.15625rem -0.15625rem 0.234375rem rgba(0, 0, 0, 0.2);
-  /*nth-of-type 限制类型   找里面a子元素  在这些a的子元素里面再选择第一个   nth-child 找所有儿子里面第几个*/
 }
 .xiangmu .banner .list {
   width: 33.75rem;
@@ -200,27 +177,22 @@ body {
 .xiangmu .banner .list li {
   text-align: left;
   float: left;
-  width: 6.875rem;
-  height: 10.625rem;
+  width: 8.90625rem;
+  height: 11.25rem;
   color: #000000;
-  font-size: 0.359375rem;
-  line-height: 0.78125rem;
-  padding: 0.78125rem 0.78125rem;
+  font-size: 0.3125rem;
+  line-height: 0.46875rem;
+}
+.xiangmu .banner .list li .jop {
+  padding: 0.46875rem;
 }
 .xiangmu .banner .list li h2 {
-  line-height: 0.625rem;
+  line-height: 0.46875rem;
   text-align: center ;
-  margin: 0.15625rem 0;
+  width: 2.34375rem;
   background-color: #0ba304;
   border: solid #979797 0.015625rem;
   color: #ffffff;
-}
-.xiangmu .banner .list li h2:nth-child(5) {
-  text-align: right ;
-  width: 4.140625rem;
-  padding-right: 0.3125rem;
-  display: block ;
-  background-color: #0ba304;
 }
 .xiangmu .banner .list li p:nth-child(8) {
   padding-left: 0.78125rem;
@@ -228,51 +200,52 @@ body {
 .xiangmu .banner .list li a:nth-child(9) {
   padding-left: 0.78125rem;
 }
-.xiangmu .banner .list li h2:nth-child(7) {
-  text-align: right ;
-  width: 3.515625rem;
-  padding-right: 0.3125rem;
-  margin-left: 0.625rem;
-  background-color: #0ba304;
+.xiangmu .banner .list li img {
+  z-index: -444;
+  width: 8.90625rem;
+  height: 5.25rem;
 }
-.xiangmu .banner .btn {
+.xiangmu .btn {
   position: absolute;
-  bottom: 0.3125rem;
+  bottom: 1.25rem;
   left: 50%;
-  margin-left: -100px;
+  transform: translateX(-50%);
 }
-.xiangmu .banner .btn li {
-  width: 0.46875rem;
-  line-height: 0.46875rem;
-  text-align: center;
-  color: #fff;
-  background: #f8ffff;
-  border-radius: 50%;
+.xiangmu .btn li {
   float: left;
-  margin: 0 0.078125rem;
-  font-size: 0.234375rem;
-}
-.xiangmu .banner .btn .on {
-  background: #ffffff;
-}
-.xiangmu .banner .banner > a {
-  text-decoration: none;
-  position: absolute;
-  width: 0.46875rem;
-  line-height: 0.9375rem;
+  display: inline-block;
+  width: 0.3125rem;
+  line-height: 0.3125rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.3);
-  top: 50%;
-  margin-top: -0.46875rem;
-  font-size: 0.28125rem;
-  color: #fff;
+  color: #cccccc;
+  background: #cccccc;
+  border-radius: 50%;
+  margin: 0 0.078125rem;
+  font-size: 0.15625rem;
 }
-.xiangmu .banner .banner > a:hover {
-  background: rgba(0, 0, 0, 0.5);
+.xiangmu .btn .on {
+  background: #e4000d;
 }
-.xiangmu .banner .banner > a:nth-of-type(1) {
-  left: 0;
+.xiangmu .btn_tou {
+  position: absolute ;
+  bottom: 1.171875rem;
+  width: 10rem;
+  height: 0.78125rem;
 }
-.xiangmu .banner .banner > a:last-child {
-  right: 0;
+.xiangmu .btn_tou a {
+  color: #3a3a3a;
+  font-size: 0.625rem;
+  margin: 0 0.625rem;
+}
+.xiangmu .btn_tou a:nth-child(1) {
+  float: left;
+}
+.xiangmu .btn_tou a:nth-child(2) {
+  float: right;
+}
+.ji {
+  background: #ffffff url(../img/10.jpg) no-repeat center;
+  background-size: 100% 7.171875rem;
+  width: 100%;
+  height: 17.75rem;
 }

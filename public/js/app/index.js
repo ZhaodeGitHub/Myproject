@@ -39,32 +39,18 @@
 
           function nick(num){
 
-
-              //2.根据指定索引值  选择按钮添加类名
-
-              console.log(num)
-
               btn.eq(num>btn.length-1 ? 0 : num).addClass('on').siblings().removeClass('on');
-
-              //3.控制列表显示  索引值*一张图的宽
 
               list.stop().animate({
                   marginLeft:-num*540/64+"rem"
 
-          })	;
+          });
 
           }
 
-          //4.给按钮添加事件
-
           btn.click(function(){
 
-              //5.获取当前元素的索引值
-
               index = $(this).index();
-
-
-              //6.调用核心函数传入索引值
 
               nick(index);
 
@@ -117,7 +103,7 @@
 
           //14.左箭头
 
-          $('.banner>a:first').click(function(){
+          $('.btn_tou a:first').click(function(){
 
               //15. 索引值-1
 
@@ -140,7 +126,7 @@
 
           //14.右箭头
 
-          $('.banner>a:last').click(function(){
+          $('.btn_tou a:last').click(function(){
 
               //15. 索引值+1
 

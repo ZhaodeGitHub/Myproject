@@ -1,91 +1,68 @@
 body{
   width: 100%;
   height: 100%;
-  background-color: #e0e0e0;
-  font-family: font;
+  background-color: #ffffff;
+  font-family:"微软雅黑";
 }
 @font-face {
-  /* font-properties */
-  font-family: font omega BEHR;
-  src:url('../font/msyh.ttf'),
-  url('../font/msyh.ttf'),
-  url('../font/msyhl.ttc'),
-   url('../font/OMGBLDRK_0.TTF'),
-  url('../font/BEHR___.TTF');
+   /* font-properties */
+   font-family:font omega BEHR;
+   src:url(../font/msyh.ttf),
+   url(../font/msyh.ttf),
+   url(../font/msyhl.ttc),
+   url(../font/OMGBLDRK_0.TTF),
+   url(../font/BEHR___.TTF);
 }
 //nav
 .nav_nav{
   position: fixed;
   width: 640/64rem;
   top:0;
-  right:20/64rem;
+  left:10/64rem;
   span{
     display:inline-block ;
     width: 40/64rem;
     height: 40/64rem;
-    border:solid #0b4004 1/64rem;
     text-align: center ;
     line-height: 40/64rem;
-    font-size: 35/64rem;
+    font-size: 45/64rem;
     color: #0b4f04;
-    float:right;
+    float:left;
     margin: 30/64rem;
     cursor: pointer;
-    //background: -webkit-linear-gradient(left top, #0b3f04, #0b4f04, #0b8a04); /* Safari 5.1 - 6.0 */
-    //background: -o-linear-gradient(bottom right, #0b3f04, #0b4f04,#0b3f04); /* Opera 11.1 - 12.0 */
-    //background: -moz-linear-gradient(bottom right, #0b3f04, #0b4f04,#0b3f04); /* Firefox 3.6 - 15 */
-    //background: linear-gradient(to bottom right, #0b3f04, #0b4f04,#0b3f04); /* 标准的语法 */
-    //animation: but 2s infinite;
-
-  }
-  @keyframes but {
-       10%{
-         background: -webkit-linear-gradient(left top, #0b8a04, #0b4f04,#0b3f04); /* Safari 5.1 - 6.0 */
-         background: -o-linear-gradient(bottom right, #0b3f04, #0b8a04,#0b3f04); /* Opera 11.1 - 12.0 */
-         background: -moz-linear-gradient(bottom right, #0b3f04, #0b8704,#0b3f04); /* Firefox 3.6 - 15 */
-         background: linear-gradient(to bottom right, #0b3f04, #0b8704,#0b3f04);
-       }30%{
-         background: -webkit-linear-gradient(left top, #0b4f04, #0b8a04, #0b4f04); /* Safari 5.1 - 6.0 */
-         background: -o-linear-gradient(bottom right, #0b8a04, #0b6704, #0b8a04); /* Opera 11.1 - 12.0 */
-         background: -moz-linear-gradient(bottom right,#0b8a04, #0b6704, #0b8a04); /* Firefox 3.6 - 15 */
-         background: linear-gradient(to bottom right, #0b8a04, #0b6704, #0b8a04);
-       }50%{
-        background: -webkit-linear-gradient(left top, #0b4f04, #0b4f04, #0b8a04);
-       }
+     }
   }
   .nav_a{
     position: relative ;
     //right:-500/64rem;
     line-height: 50/64rem;
-    float:right;
-    margin-top: 15/64rem;
+    float:left;
+    margin-top: 10/64rem;
     text-align: center ;
     width: 300/64rem;
     display: none;
+    a{
+      display: inline-block ;
+      font-size: 25/64rem;
+      width: 50/64rem;
+      color:#0b4004;
+      line-height: 50/64rem;
+      //border:solid #0b4004 1/64rem;
+    }
   }
 
-  a{
-    display: inline-block ;
-    font-size: 30/64rem;
-    width: 60/64rem;
-    color:#0b4004;
-    line-height: 50/64rem;
-    //border:solid #0b4004 1/64rem;
-  }
-}
+
 //音乐
 .audio{
-  display: inline-block ;
-  width: 100/64rem;
-  height: 100/64rem;
-  position: absolute ;
-  right:50/64rem;
-  bottom:50/64rem;
+  position: relative ;
+  right:30/64rem;
+  bottom:60/64rem;
+  width: 400/64rem;
+  height: 80/64rem;
+  background-color: #0b8a04 ;
+  z-index: 9999;
 }
-.icon-yinlemusic215{
-   font-size:50/64rem;
-   color:#ffffff;
-}
+
 .nav{
   position: fixed ;
   bottom:0;
@@ -121,7 +98,7 @@ body{
   text-align: center;
     h2{
       font-size: 62/64rem;
-      font-family: omega;
+      font-family:'OMEGA Boldo Rocko';
       color: #0b4004;
       padding: 186/64rem 0 50/64rem 0;
     }
@@ -176,23 +153,12 @@ body{
 }
 //项目
 .xiangmu{
-   width: 100%;
-   height: 1136/64rem;
-   //background-color: #ffffff;
-   text-align: left ;
-   //background: #ffffff url(../img/bg_2.png)0 400/64rem no-repeat;
-   //background-size:640/64rem 844/64rem ;
-  background:#ffffff url(../img/99.png)-120/64rem 390/64rem no-repeat ;
-    background-size:872/64rem 904/64rem;
-
-       z-index: -222;
-  //.bg_banner{
-  //  width: 100%;
-  //  height: 1136/64rem;
-  //  background: url(../img/99.png)-120/64rem 0 no-repeat ;
-  //  background-size:872/64rem 904/64rem;
-  //  z-index: 9999;
-  //}
+    width: 100%;
+    height: 1136/64rem;
+    text-align: left ;
+    background:rgba(255,255,255,.2) url(../img/bg_2.png)0  370/64rem no-repeat ;
+    background-size:640/64rem 944/64rem;
+    z-index: -222;
    span{
      display: block ;
      font-size: 52/64rem;
@@ -200,15 +166,15 @@ body{
      height: 100/64rem;
      padding:150/64rem 70/64rem;
      line-height: 50/64rem;
-     font-family: BEHR;
+     font-family: "BethHand";
      color: #000000;
      z-index: -9999;
      text-shadow:0 0 6/64rem #979797;
      //background-color: #ffbc00;
    }
     .banner{
-      width: 540/64rem;
-      height: 690/64rem;
+      width: 570/64rem;
+      height: 720/64rem;
       //background-color: #f8ffff;
       text-align: center ;
       position:  relative;
@@ -216,36 +182,33 @@ body{
       overflow: hidden ;
       margin: 0 auto;
       z-index: 1;
-      background: #f8ffff url(../img/99.png)-167/64rem 90/64rem no-repeat ;
-      background-size:872/64rem 904/64rem;
+      background: #ffffff;
+      //background: #f8ffff url(../img/99.png)-167/64rem 90/64rem no-repeat ;
+      //background-size:872/64rem 904/64rem;
       transform: translateX(-50%);
       margin-left: 50%;
-      box-shadow: -10/64rem  -10/64rem 15/64rem rgba(0, 0, 0, 0.2);
+      //box-shadow: -10/64rem  -10/64rem 15/64rem rgba(0, 0, 0, 0.2);
       .list{
         width: 540*4/64rem;
         li{
           text-align: left;
           float: left;
-          width: 440/64rem;
-          height: 680/64rem;
+          width: 570/64rem;
+          height: 720/64rem;
           color: #000000;
-          font-size: 23/64rem;
-          line-height: 50/64rem;
-          padding:50/64rem 50/64rem;
+          font-size: 20/64rem;
+          line-height: 30/64rem;
+          .jop{
+            padding:30/64rem;
+          }
           h2{
-            line-height: 40/64rem;
+            line-height: 30/64rem;
             text-align: center ;
-            margin: 10/64rem 0;
+            //margin: 10/64rem 0;
+            width: 150/64rem;
             background-color: #0ba304;
             border:solid #979797 1/64rem;
             color: #ffffff;
-          }
-          h2:nth-child(5){
-            text-align: right ;
-            width: 265/64rem;
-            padding-right:20/64rem;
-            display: block ;
-            background-color:  #0ba304;
           }
           p:nth-child(8){
             padding-left: 50/64rem;
@@ -253,62 +216,63 @@ body{
           a:nth-child(9){
             padding-left: 50/64rem;
           }
-          h2:nth-child(7){
-            text-align: right ;
-            width: 225/64rem;
-            padding-right:20/64rem;
-            margin-left: 40/64rem;
-            background-color:  #0ba304;
+          img{
+            z-index: -444;
+            width: 570/64rem;
+            height: 336/64rem;
           }
         }
       }
-
-      .btn{
-        position: absolute;
-        bottom: 20/64rem;
-        left: 50%;
-        margin-left: -100px;
-      }
-
-      .btn li{
-        width: 30/64rem;
-        line-height: 30/64rem;
-        text-align: center;
-        color: #fff;
-        background: #f8ffff;
-        border-radius: 50%;
-        float: left;
-        margin: 0 5/64rem;
-        font-size: 15/64rem;
-      }
-
-      .btn .on{
-        background: #ffffff;
-      }
-
-      .banner>a{
-        text-decoration: none;
-        position: absolute;
-        width: 30/64rem;
-        line-height: 60/64rem;
-        text-align: center;
-        background: rgba(0,0,0,0.3);
-        top: 50%;
-        margin-top: -30/64rem;
-        font-size: 18/64rem;
-        color: #fff;
-      }
-
-      .banner>a:hover{
-        background: rgba(0,0,0,0.5);
-      }
-      /*nth-of-type 限制类型   找里面a子元素  在这些a的子元素里面再选择第一个   nth-child 找所有儿子里面第几个*/
-      .banner>a:nth-of-type(1){
-        left: 0;
-      }
-      .banner>a:last-child{
-        right: 0;
-      }
     }
+  .btn{
+    position: absolute;
+    bottom: 80/64rem;
+    left: 50%;
+    transform: translateX(-50%);
 
   }
+
+  .btn li{
+    float:left;
+    display: inline-block;
+    width: 20/64rem;
+    line-height: 20/64rem;
+    text-align: center;
+    color: #cccccc;
+    background: #cccccc;
+    border-radius: 50%;
+    margin: 0 5/64rem;
+    font-size: 10/64rem;
+
+  }
+
+    .btn .on{
+      background: #e4000d;
+    }
+      .btn_tou{
+        position: absolute ;
+        bottom:75/64rem;
+        width: 640/64rem;
+        height: 50/64rem;
+        a{
+          color: rgb(58, 58, 58);
+          font-size: 40/64rem;
+          margin: 0 40/64rem;
+        }
+
+      }
+      /*nth-of-type 限制类型   找里面a子元素  在这些a的子元素里面再选择第一个   nth-child 找所有儿子里面第几个*/
+      .btn_tou a:nth-child(1){
+        float:left;
+      }
+      .btn_tou a:nth-child(2){
+        float:right;
+      }
+  }
+//技能
+.ji{
+  background:#ffffff url(../img/10.jpg) no-repeat center;
+  background-size: 100% 459/64rem;
+  width: 100%;
+  height: 1136/64rem;
+}
