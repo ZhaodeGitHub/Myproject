@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0"/>
+    <title>html5 audio音频播放</title>
+    <script src="../public/js/lib/jquery-1.7.2.min.js"></script>
+</head>
+<div id="audioControl">
+    <div class="play">
+        <span id="play">Play</span>
+    </div>
+</div>
+<audio id="media" src="../public/music/Shawn%20Mendes%20-%20Stitches.mp3"></audio>
+<body>
+<script>
+    var media = $('#media')[0];
+    var audioTimer = null;
+
+    //绑定播放暂停控制
+    $('.play').bind('click', function() {
+        playAudio();
+    });
+
+    //播放暂停切换
+    function playAudio() {
+        if(media.paused) {
+            play();
+        } else {
+            pause();
+        }
+    }
+
+    //播放
+    function play() {
+        media.play();
+        $('#play').html('听音乐');
+    }
+
+    //暂停
+    function pause() {
+        media.pause();
+        $('#play').html('Shop');
+    }
+</script>
+
+</body>
+</html>

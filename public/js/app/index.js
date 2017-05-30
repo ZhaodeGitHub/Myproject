@@ -4,24 +4,35 @@
        init:function(){
             this.banner()
                 .index()
+                .audio()
+
 
 
            return this;
        },
         index:function(){
-            var span= $('.nav_nav span');
-            span.on("mouseover",function(){
-             console.log(333)
-                $('.nav_nav .nav_a').css({display:'block'});
-            })
-            span.on("onmouseout",function(){
-                $('.nav_nav .nav_a').css({display:'none'});
+
+            var nav = $('body .nav_left');
+
+            var side=$('body .nav_side');
+
+            $('.nav_btn i').on('click',function(){
+                console.log(33)
+                $('body .nav_side').toggleClass('side');
+                nav.toggleClass('active');
+
+            });
+            $('.nav_side').on('click',function(){
+
+                side.removeClass('side');
+                nav.removeClass('active');
+
             });
 
 
             return this;
         },
-      banner:function(){
+        banner:function(){
 
           var btn = $('.btn li');
 
@@ -42,7 +53,7 @@
               btn.eq(num>btn.length-1 ? 0 : num).addClass('on').siblings().removeClass('on');
 
               list.stop().animate({
-                  marginLeft:-num*540/64+"rem"
+                  marginLeft:-num*570/64+"rem"
 
           });
 
@@ -153,8 +164,45 @@
 
 
           return this;
-      }
+      },
+        audio:function(){
+            //var issrc=[
+            //    'RenZhenLaoqu.mp3','Shawn%20Mendes%20-%20Stitches.mp3','nian.mp3','7Years.mp3'
+            //];
+            var media = $('#media')[0];
 
+            var audioTimer = null;
+
+            //绑定播放暂停控制
+            //$public/music/Shawn%20Mendes%20-%20Stitches.mp3
+            $('.play').bind('click', function() {
+                playAudio();
+            });
+
+
+            //播放暂停切换
+            function playAudio() {
+
+                if(media.paused) {
+                    play();
+                } else {
+                    pause();
+                }
+            }
+
+            function play() {
+                media.play();
+                    $('.start').addClass('START');
+                console.log('开始')
+            }
+
+            //暂停
+            function pause() {
+                media.pause();
+                $('.start').removeClass('START');
+                console.log('结束')
+            }
+        }
     };
     min.init();
     console.log($)

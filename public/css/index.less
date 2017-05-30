@@ -14,103 +14,150 @@ body{
    url(../font/BEHR___.TTF);
 }
 //nav
-.nav_nav{
-  position: fixed;
-  width: 640/64rem;
-  top:0;
-  left:10/64rem;
-  span{
-    display:inline-block ;
-    width: 40/64rem;
-    height: 40/64rem;
-    text-align: center ;
-    line-height: 40/64rem;
-    font-size: 45/64rem;
-    color: #0b4f04;
-    float:left;
-    margin: 30/64rem;
+.nav_btn {
+  i {
+    font-size: 40/64rem;
+    position: fixed;
+    top: 30/64rem;
+    left: 40/64rem;
     cursor: pointer;
-     }
   }
-  .nav_a{
-    position: relative ;
-    //right:-500/64rem;
-    line-height: 50/64rem;
-    float:left;
-    margin-top: 10/64rem;
-    text-align: center ;
-    width: 300/64rem;
-    display: none;
-    a{
-      display: inline-block ;
-      font-size: 25/64rem;
-      width: 50/64rem;
-      color:#0b4004;
-      line-height: 50/64rem;
-      //border:solid #0b4004 1/64rem;
-    }
-  }
+}
+ .nav_left{
+        display: block ;
+        position: relative ;
+        left:0;
+        background-color: #000000;
+        line-height: 150/64rem;
+        text-align: center ;
+        width: 100/64rem;
+        height: 1136/64rem;
+        padding-top: 50/64rem;
+        a{
+          display: inline-block ;
+          font-size: 23/64rem;
+          width: 100/64rem;
+          color: #ffffff;
+          line-height: 40/64rem;
+          padding-top: 10/64rem;
+          //border:solid #0b4004 1/64rem;
+          i{
+            display: block ;
+            font-size: 30/64rem;
+          }
+        }
+        a:hover{
+          background-color: #323232;
+        }
+      }
 
+.nav_nav.slide{
+  display: block ;
+  background-color: rgba(0,0,0,.3);
+}
+body .nav_side{
+  width: 100%;
+  height: 100%;
+  z-index:1;
+  position: fixed;
+  top:0;
+  left:-100%;
+  opacity: 0;
+  -moz-opacit:0;
+  background-color: #000000;
+}
+.nav_side.side{
+  left:0;
+  opacity: .3;
+  -moz-opacit:0.3;
+}
+
+body .nav_left{
+  width: 100/64rem;
+  height: 100%;
+  background-color: #20272e;
+  padding:70/64rem 0;
+  z-index:9999;
+  position: fixed;
+  top:0;
+  left:-100%;
+  opacity: 0;
+  transition: .6s;
+}
+.nav_left.active{
+  left:0;
+  opacity:1;
+}
 
 //音乐
 .audio{
-  position: relative ;
-  right:30/64rem;
-  bottom:60/64rem;
-  width: 400/64rem;
-  height: 80/64rem;
-  background-color: #0b8a04 ;
-  z-index: 9999;
-}
-
-.nav{
   position: fixed ;
-  bottom:0;
-  height: 100/64rem;
-  width: 100%;
-  background-color: rgb(11, 63, 4);
-  li{
-    float:left;
-    width: 25%;
+  top:30/64rem;
+  right:40/64rem;
+  z-index: 9999;
+  width: 40/64rem;
+  height: 45/64rem;
+  line-height: 45/64rem;
+  text-align: center;
+  font-size: 18/64rem;
+  color: #000000;
+  text-shadow: #ffffff 0 0 10/64rem;
+  //span{
+  //  display: inline-block ;
+  //  font-size: 25/64rem;
+  //  width: 50/64rem;
+  //}
+  .play{
+    display: inline-block ;
   }
-  li a{
-    width: 100%;
-    line-height: 100/64rem;
-    text-align: center ;
-    display: block ;
-    font-size: 45/64rem;
+  .start{
+    line-height: 50/64rem;
+    display: inline-block ;
+    font-size:35/64rem;
+    z-index: 9999;
+    cursor: pointer;
+    width: 55/64rem;
+    height:55/64rem;
+  }
+  .start.START{
+    background-color: #000000;
+    border-radius: 50%;
     color:#ffffff;
-
+    animation:xuan 5s  linear infinite;
   }
-  .icon-xiangmujingyan{
-    font-size: 35/64rem;
-  }
-  a:hover{
-    color: #ffbc00;
+  @keyframes xuan {
+    from{
+      transform: rotate(0);
+    }to{
+      transform: rotate(360deg);
+         }
   }
 
 }
+
 .xing{
   width: 100%;
   height: 1136/64rem;
-  background:url(../img/02.jpg) no-repeat center;
+  background:url(../img/09.jpg) no-repeat center;
   background-size: 940/64rem 1210/64rem;
-  text-align: center;
+  text-align: left;
     h2{
-      font-size: 62/64rem;
-      font-family:'OMEGA Boldo Rocko';
-      color: #0b4004;
-      padding: 186/64rem 0 50/64rem 0;
+      font-size: 42/64rem;
+      font-weight:bold;
+      font-family: "BibleScrT";
+      color: #000000;
+      padding: 236/64rem 0 6/64rem 50/64rem;
+      text-shadow:0 0 6/64rem #979797;
     }
     .resume{
-      width: 520/64rem;
+      width: 540/64rem;
       height: 409/64rem;
       background-color: rgba(255, 255, 255, 0.7);
       margin: 20/64rem auto;
-      padding:38/64rem 20/64rem;
+      padding:38/64rem 10/64rem;
       //头像
          .avatar{
-           width: 184/64rem;
+           width: 164/64rem;
            height: 416/64rem;
            border-right:1/64rem solid rgba(0, 0, 0, 0.5);
            text-align: center;
@@ -124,29 +171,32 @@ body{
                  background: url(../img/tou.png)center -20/64rem no-repeat;
                  background-size: 153/64rem 220/64rem;
                  position: absolute ;
-                 left:50%;
                  top:105/64rem;
-                 transform: translateX(-50%);
+                 left:10/64rem;
+                 transform: rotateY(180deg);
                }
+
                p{
                  position: absolute ;
                  top:260/64rem;
                  left:50%;
                  font-size: 25/64rem;
                  transform: translateX(-50%);
+                 font-family: '微软雅黑';
                  //line-height: 50/64rem;
                }
          }
+
       .xingxi{
          float:left;
          text-align: left;
-         padding: 50/64rem 25/64rem;
+         padding: 50/64rem 20/64rem;
          p{
-           font-size: 20/64rem;
+           font-size: 22/64rem;
            line-height: 45/64rem;
          }
         p:hover{
-          color:#000000;
+          font-size: 25/64rem;
         }
       }
     }
@@ -155,18 +205,20 @@ body{
 .xiangmu{
     width: 100%;
     height: 1136/64rem;
-    text-align: left ;
-    background:rgba(255,255,255,.2) url(../img/bg_2.png)0  370/64rem no-repeat ;
-    background-size:640/64rem 944/64rem;
+    background:rgba(255,255,255,.8) url(../img/04.jpg)center no-repeat ;
+    background-size:640/64rem 1136/64rem;
     z-index: -222;
+    text-align: right;
    span{
+     font-weight:bold;
      display: block ;
-     font-size: 52/64rem;
-     width: 500/64rem;
-     height: 100/64rem;
-     padding:150/64rem 70/64rem;
+     font-size: 42/64rem;
+     width: 600/64rem;
+     height: 210/64rem;
+     text-align: right;
+     padding:140/64rem 40/64rem 0 0;
      line-height: 50/64rem;
-     font-family: "BethHand";
+     font-family: "BibleScrT";
      color: #000000;
      z-index: -9999;
      text-shadow:0 0 6/64rem #979797;
@@ -174,7 +226,7 @@ body{
    }
     .banner{
       width: 570/64rem;
-      height: 720/64rem;
+      height: 800/64rem;
       //background-color: #f8ffff;
       text-align: center ;
       position:  relative;
@@ -183,50 +235,60 @@ body{
       margin: 0 auto;
       z-index: 1;
       background: #ffffff;
+      border-radius: 20/64rem;
       //background: #f8ffff url(../img/99.png)-167/64rem 90/64rem no-repeat ;
       //background-size:872/64rem 904/64rem;
       transform: translateX(-50%);
       margin-left: 50%;
-      //box-shadow: -10/64rem  -10/64rem 15/64rem rgba(0, 0, 0, 0.2);
+      box-shadow: -5/64rem  -5/64rem 15/64rem rgba(0, 0, 0, 0.2);
       .list{
-        width: 540*4/64rem;
+        width: 570*4/64rem;
         li{
           text-align: left;
           float: left;
           width: 570/64rem;
-          height: 720/64rem;
+          height: 800/64rem;
           color: #000000;
           font-size: 20/64rem;
-          line-height: 30/64rem;
+          line-height: 35/64rem;
           .jop{
-            padding:30/64rem;
+            background: #ffffff;
+            padding:0 30/64rem;
+            margin-top: 5/64rem;
+            h2{
+              display:inline-block ;
+              line-height: 40/64rem;
+              font-size: 25/64rem;
+              padding: 20/64rem 0 10/64rem 0;
+              background: #ffffff;
+              font-weight:bold;
+            }
+            p{
+              line-height: 60/64rem;
+              font-size: 20/64rem;
+              color: #313131;
+              border-bottom:2/64rem solid #f7f7f7;
+              overflow-y :auto;
+              padding-left: 20/64rem;
+            }
+            p:hover{
+              background-color: #f7f7f7;
+              border-left:5/64rem solid #ffbc00;
+            }
           }
-          h2{
-            line-height: 30/64rem;
-            text-align: center ;
-            //margin: 10/64rem 0;
-            width: 150/64rem;
-            background-color: #0ba304;
-            border:solid #979797 1/64rem;
-            color: #ffffff;
-          }
-          p:nth-child(8){
-            padding-left: 50/64rem;
-          }
-          a:nth-child(9){
-            padding-left: 50/64rem;
-          }
+
           img{
             z-index: -444;
             width: 570/64rem;
             height: 336/64rem;
+            background-color: #979797;
           }
         }
       }
     }
   .btn{
     position: absolute;
-    bottom: 80/64rem;
+    bottom: 30/64rem;
     left: 50%;
     transform: translateX(-50%);
 
@@ -247,11 +309,11 @@ body{
   }
 
     .btn .on{
-      background: #e4000d;
+      background: #000000;
     }
       .btn_tou{
         position: absolute ;
-        bottom:75/64rem;
+        bottom:25/64rem;
         width: 640/64rem;
         height: 50/64rem;
         a{
@@ -271,7 +333,7 @@ body{
   }
 //技能
 .ji{
-  background:#ffffff url(../img/10.jpg) no-repeat center;
+  background:#ffffff url(../img/10.jpg)0 -200/64rem no-repeat;
   background-size: 100% 459/64rem;
   width: 100%;
   height: 1136/64rem;

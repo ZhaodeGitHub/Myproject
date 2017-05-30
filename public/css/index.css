@@ -10,96 +10,138 @@ body {
   
   /* font-properties */
 }
-.nav_nav {
+.nav_btn i {
+  font-size: 0.625rem;
   position: fixed;
-  width: 10rem;
-  top: 0;
-  left: 0.15625rem;
-}
-.nav_nav span {
-  display: inline-block;
-  width: 0.625rem;
-  height: 0.625rem;
-  text-align: center ;
-  line-height: 0.625rem;
-  font-size: 0.703125rem;
-  color: #0b4f04;
-  float: left;
-  margin: 0.46875rem;
+  top: 0.46875rem;
+  left: 0.625rem;
   cursor: pointer;
 }
-.nav_a {
+.nav_left {
+  display: block ;
   position: relative ;
-  line-height: 0.78125rem;
-  float: left;
-  margin-top: 0.15625rem;
+  left: 0;
+  background-color: #000000;
+  line-height: 2.34375rem;
   text-align: center ;
-  width: 4.6875rem;
-  display: none;
+  width: 1.5625rem;
+  height: 17.75rem;
+  padding-top: 0.78125rem;
 }
-.nav_a a {
+.nav_left a {
   display: inline-block;
-  font-size: 0.390625rem;
-  width: 0.78125rem;
-  color: #0b4004;
-  line-height: 0.78125rem;
+  font-size: 0.359375rem;
+  width: 1.5625rem;
+  color: #ffffff;
+  line-height: 0.625rem;
+  padding-top: 0.15625rem;
+}
+.nav_left a i {
+  display: block ;
+  font-size: 0.46875rem;
+}
+.nav_left a:hover {
+  background-color: #323232;
+}
+.nav_nav.slide {
+  display: block ;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body .nav_side {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  -moz-opacit: 0;
+  background-color: #000000;
+}
+.nav_side.side {
+  left: 0;
+  opacity: .3;
+  -moz-opacit: 0.3;
+}
+body .nav_left {
+  width: 1.5625rem;
+  height: 100%;
+  background-color: #20272e;
+  padding: 1.09375rem 0;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  transition: .6s;
+}
+.nav_left.active {
+  left: 0;
+  opacity: 1;
 }
 .audio {
-  position: relative ;
-  right: 0.46875rem;
-  bottom: 0.9375rem;
-  width: 6.25rem;
-  height: 1.25rem;
-  background-color: #0b8a04 ;
-  z-index: 9999;
-}
-.nav {
   position: fixed ;
-  bottom: 0;
-  height: 1.5625rem;
-  width: 100%;
-  background-color: #0b3f04;
+  top: 0.46875rem;
+  right: 0.625rem;
+  z-index: 9999;
+  width: 0.625rem;
+  height: 0.703125rem;
+  line-height: 0.703125rem;
+  text-align: center;
+  font-size: 0.28125rem;
+  color: #000000;
+  text-shadow: #ffffff 0 0 0.15625rem;
 }
-.nav li {
-  float: left;
-  width: 25%;
+.audio .play {
+  display: inline-block;
 }
-.nav li a {
-  width: 100%;
-  line-height: 1.5625rem;
-  text-align: center ;
-  display: block ;
-  font-size: 0.703125rem;
-  color: #ffffff;
-}
-.nav .icon-xiangmujingyan {
+.audio .start {
+  line-height: 0.78125rem;
+  display: inline-block;
   font-size: 0.546875rem;
+  z-index: 9999;
+  cursor: pointer;
+  width: 0.859375rem;
+  height: 0.859375rem;
 }
-.nav a:hover {
-  color: #ffbc00;
+.audio .start.START {
+  background-color: #000000;
+  border-radius: 50%;
+  color: #ffffff;
+  animation: xuan 5s  linear infinite;
+}
+@keyframes xuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .xing {
   width: 100%;
   height: 17.75rem;
-  background: url(../img/02.jpg) no-repeat center;
+  background: url(../img/09.jpg) no-repeat center;
   background-size: 14.6875rem 18.90625rem;
-  text-align: center;
+  text-align: left;
 }
 .xing h2 {
-  font-size: 0.96875rem;
-  font-family: 'OMEGA Boldo Rocko';
-  color: #0b4004;
-  padding: 2.90625rem 0 0.78125rem 0;
+  font-size: 0.65625rem;
+  font-weight: bold;
+  font-family: "BibleScrT";
+  color: #000000;
+  padding: 3.6875rem 0 0.09375rem 0.78125rem;
+  text-shadow: 0 0 0.09375rem #979797;
 }
 .xing .resume {
-  width: 8.125rem;
+  width: 8.4375rem;
   height: 6.390625rem;
   background-color: rgba(255, 255, 255, 0.7);
   margin: 0.3125rem auto;
-  padding: 0.59375rem 0.3125rem;
+  padding: 0.59375rem 0.15625rem;
 }
 .xing .resume .avatar {
-  width: 2.875rem;
+  width: 2.5625rem;
   height: 6.5rem;
   border-right: 0.015625rem solid rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -114,9 +156,9 @@ body {
   background: url(../img/tou.png) center -0.3125rem no-repeat;
   background-size: 2.390625rem 3.4375rem;
   position: absolute ;
-  left: 50%;
   top: 1.640625rem;
-  transform: translateX(-50%);
+  left: 0.15625rem;
+  transform: rotateY(180deg);
 }
 .xing .resume .avatar p {
   position: absolute ;
@@ -124,43 +166,46 @@ body {
   left: 50%;
   font-size: 0.390625rem;
   transform: translateX(-50%);
+  font-family: '微软雅黑';
 }
 .xing .resume .xingxi {
   float: left;
   text-align: left;
-  padding: 0.78125rem 0.390625rem;
+  padding: 0.78125rem 0.3125rem;
 }
 .xing .resume .xingxi p {
-  font-size: 0.3125rem;
+  font-size: 0.34375rem;
   line-height: 0.703125rem;
 }
 .xing .resume .xingxi p:hover {
-  color: #000000;
+  font-size: 0.390625rem;
 }
 .xiangmu {
   width: 100%;
   height: 17.75rem;
-  text-align: left ;
-  background: rgba(255, 255, 255, 0.2) url(../img/bg_2.png) 0 5.78125rem no-repeat;
-  background-size: 10rem 14.75rem;
+  background: rgba(255, 255, 255, 0.8) url(../img/04.jpg) center no-repeat;
+  background-size: 10rem 17.75rem;
   z-index: -222;
+  text-align: right;
   /*nth-of-type 限制类型   找里面a子元素  在这些a的子元素里面再选择第一个   nth-child 找所有儿子里面第几个*/
 }
 .xiangmu span {
+  font-weight: bold;
   display: block ;
-  font-size: 0.8125rem;
-  width: 7.8125rem;
-  height: 1.5625rem;
-  padding: 2.34375rem 1.09375rem;
+  font-size: 0.65625rem;
+  width: 9.375rem;
+  height: 3.28125rem;
+  text-align: right;
+  padding: 2.1875rem 0.625rem 0 0;
   line-height: 0.78125rem;
-  font-family: "BethHand";
+  font-family: "BibleScrT";
   color: #000000;
   z-index: -9999;
   text-shadow: 0 0 0.09375rem #979797;
 }
 .xiangmu .banner {
   width: 8.90625rem;
-  height: 11.25rem;
+  height: 12.5rem;
   text-align: center ;
   position: relative;
   top: -1.5625rem;
@@ -168,46 +213,57 @@ body {
   margin: 0 auto;
   z-index: 1;
   background: #ffffff;
+  border-radius: 0.3125rem;
   transform: translateX(-50%);
   margin-left: 50%;
+  box-shadow: -0.078125rem -0.078125rem 0.234375rem rgba(0, 0, 0, 0.2);
 }
 .xiangmu .banner .list {
-  width: 33.75rem;
+  width: 35.625rem;
 }
 .xiangmu .banner .list li {
   text-align: left;
   float: left;
   width: 8.90625rem;
-  height: 11.25rem;
+  height: 12.5rem;
   color: #000000;
   font-size: 0.3125rem;
-  line-height: 0.46875rem;
+  line-height: 0.546875rem;
 }
 .xiangmu .banner .list li .jop {
-  padding: 0.46875rem;
+  background: #ffffff;
+  padding: 0 0.46875rem;
+  margin-top: 0.078125rem;
 }
-.xiangmu .banner .list li h2 {
-  line-height: 0.46875rem;
-  text-align: center ;
-  width: 2.34375rem;
-  background-color: #0ba304;
-  border: solid #979797 0.015625rem;
-  color: #ffffff;
+.xiangmu .banner .list li .jop h2 {
+  display: inline-block;
+  line-height: 0.625rem;
+  font-size: 0.390625rem;
+  padding: 0.3125rem 0 0.15625rem 0;
+  background: #ffffff;
+  font-weight: bold;
 }
-.xiangmu .banner .list li p:nth-child(8) {
-  padding-left: 0.78125rem;
+.xiangmu .banner .list li .jop p {
+  line-height: 0.9375rem;
+  font-size: 0.3125rem;
+  color: #313131;
+  border-bottom: 0.03125rem solid #f7f7f7;
+  overflow-y: auto;
+  padding-left: 0.3125rem;
 }
-.xiangmu .banner .list li a:nth-child(9) {
-  padding-left: 0.78125rem;
+.xiangmu .banner .list li .jop p:hover {
+  background-color: #f7f7f7;
+  border-left: 0.078125rem solid #ffbc00;
 }
 .xiangmu .banner .list li img {
   z-index: -444;
   width: 8.90625rem;
   height: 5.25rem;
+  background-color: #979797;
 }
 .xiangmu .btn {
   position: absolute;
-  bottom: 1.25rem;
+  bottom: 0.46875rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -224,11 +280,11 @@ body {
   font-size: 0.15625rem;
 }
 .xiangmu .btn .on {
-  background: #e4000d;
+  background: #000000;
 }
 .xiangmu .btn_tou {
   position: absolute ;
-  bottom: 1.171875rem;
+  bottom: 0.390625rem;
   width: 10rem;
   height: 0.78125rem;
 }
@@ -244,7 +300,7 @@ body {
   float: right;
 }
 .ji {
-  background: #ffffff url(../img/10.jpg) no-repeat center;
+  background: #ffffff url(../img/10.jpg) 0 -3.125rem no-repeat;
   background-size: 100% 7.171875rem;
   width: 100%;
   height: 17.75rem;
