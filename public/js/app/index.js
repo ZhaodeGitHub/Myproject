@@ -5,12 +5,14 @@
             this.banner()
                 .index()
                 .audio()
+                //.ji()
 
 
 
            return this;
        },
         index:function(){
+
 
             var nav = $('body .nav_left');
 
@@ -143,13 +145,7 @@
 
               index++;
 
-              //16.  如果小于0 变成最后一张
-
-              //9.如果数值  大于  按钮的长度    走到最后一张  显示的第一张 。索引值是6-1 = 5
-
               if(index>btn.length){
-
-                  //10.瞬间将位置 调到0 第一张的位置  第一张显示和最后一张是一样的
 
                   list.css({marginLeft:0});
 
@@ -175,7 +171,7 @@
 
             //绑定播放暂停控制
             //$public/music/Shawn%20Mendes%20-%20Stitches.mp3
-            $('.play').bind('click', function() {
+            $('.play').on('click', function() {
                 playAudio();
             });
 
@@ -202,7 +198,12 @@
                 $('.start').removeClass('START');
                 console.log('结束')
             }
-        }
+        },
+        //ji:function(){
+        //    var list=$('.ji .-center li');
+        //    list.even().css({'border':'2px solid red'});
+        //    return this;
+        //}
     };
     min.init();
     console.log($)
