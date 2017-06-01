@@ -18,17 +18,16 @@ body {
   cursor: pointer;
 }
 .index_btn {
-  position: absolute ;
+  position: relative;
   left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.96875rem;
   text-align: center ;
   display: inline-block;
   font-size: 0.390625rem;
-  width: 1.5625rem;
-  height: 0.625rem;
-  border: 0.015625rem solid #666666;
-  line-height: 0.625rem;
-  color: #666666;
-  opacity: 0;
+  width: 3.125rem;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
 }
 .index {
   display: block ;
@@ -36,6 +35,8 @@ body {
   height: 17.75rem;
   position: relative;
   left: 0;
+  background: url(../img/index.png) no-repeat center;
+  background-size: 12.0625rem 17.75rem;
 }
 .index p {
   position: absolute;

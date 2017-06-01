@@ -13,7 +13,6 @@
        },
         index:function(){
 
-
             var nav = $('body .nav_left');
 
             var side=$('body .nav_side');

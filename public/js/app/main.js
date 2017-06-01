@@ -110,19 +110,4 @@ var Node = function () {
   return Node;
 }();
 
-
- var list=document.querySelectorAll('li');
-
-
- if(list%2==0){
-   list.style='background-color:#6293BB;color:#fff;';
- }
-
-  list.onclick=function(){
-
-    console.log(333)
-
-  }
-
-
 new DAH(document.querySelectorAll('li'));
